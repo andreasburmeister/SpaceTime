@@ -89,6 +89,10 @@ public class Sketch extends PApplet {
 						newProjectile();
 					}
 					break;
+				case 'o':
+					long time = java.lang.System.currentTimeMillis();
+					saveFrame( "screenshots/SpaceTime-" + time + ".png" );
+					break;
 				case 'p':
 					paused = !paused;
 			}
@@ -325,6 +329,7 @@ public class Sketch extends PApplet {
 				+ "[CTRL]    - toggle aiming device\n"
 				+ "[ALT]     - toggle rapid fire\n"
 				+ "[SPACE]   - shoot projectile\n\n"
+				+ "[O]       - take screenshot\n\n"
 				+ "[P]       - pause/unpause game\n"
 				+ "[ESCAPE]  - quit",
 				30, 50, 0
