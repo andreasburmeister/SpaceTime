@@ -7,10 +7,10 @@ import processing.event.MouseEvent;
 
 import java.util.ArrayList;
 
-public class Sketch extends PApplet {
+public class SpaceTime extends PApplet {
 	
 	public static void main( String args[] ) {
-		PApplet.main( new String[] { "--present", "spaceTime.Sketch" } );
+		PApplet.main( new String[] { "--present", "spaceTime.SpaceTime" } );
 	}
 	
 	public void settings() {
@@ -183,7 +183,7 @@ public class Sketch extends PApplet {
 	}
 	
 	private int hitSpaceInvaders = 0;
-	private int hitPacmanGhosts = 0;
+	//private int hitPacmanGhosts = 0;
 	
 	private void countSpaceInvaders() {
 		hitSpaceInvaders++;
@@ -209,7 +209,7 @@ public class Sketch extends PApplet {
 	}
 	
 	private void countPacmanGhosts() {
-		hitPacmanGhosts++;
+		//hitPacmanGhosts++;
 	}
 	
 	private boolean doubleFireUnlocked = false;
