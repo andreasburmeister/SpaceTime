@@ -23,7 +23,7 @@ public class Projectile {
 	private final float size = 3;
 	
 	protected float getSize() {
-			return size;
+		return size;
 	}
 	
 	private float rotationX = 0;
